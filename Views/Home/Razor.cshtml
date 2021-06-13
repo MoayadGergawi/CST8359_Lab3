@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+    
+
+    <h1>Number of bottles</h1>
+    @for (var i = 99; i > 0; i--)
+    {
+        <p>There are @i bottles of beer.Take one @(i - 1)</p>
+        @if (i % 20 == 0)
+        {
+            <p>you win</p>
+        }
+        @if (i == 49)
+        {
+            <p>you loose(</p>
+        }
+    }
+
+</body>
+</html>
